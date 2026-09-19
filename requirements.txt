@@ -1,0 +1,2 @@
+# CENTRIC runs on the Python standard library alone (3.9+).
+# Nothing to install. This file exists so the absence of dependencies is explicit.

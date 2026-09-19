@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CENTRIC — Repayment Intelligence</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <nav class="sidebar">
+    <div class="logo" data-view="landing" style="cursor:pointer">
+      <svg viewBox="0 0 24 24" class="logo-mark" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M12 3 A9 9 0 0 1 12 21" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-dasharray="2.4 2.6"/>
+        <circle cx="12" cy="12" r="3" fill="currentColor"/>
+      </svg>
+      <span>CENTRIC</span>
+    </div>
+
+    <ul class="nav" id="nav">
+      <li data-view="landing"><span class="ico">⌂</span>Home</li>
+      <li class="nav-sec">The product</li>
+      <li data-view="about" class="active"><span class="ico">◈</span>About CENTRIC</li>
+      <li data-view="how"><span class="ico">⌁</span>How it works</li>
+      <li data-view="modules"><span class="ico">⊞</span>What it does</li>
+      <li class="nav-sec">For everyone</li>
+      <li data-view="learn"><span class="ico">✦</span>Micro-lessons</li>
+      <li data-view="invest"><span class="ico">◇</span>Investing</li>
+      <li data-view="earn"><span class="ico">↗</span>Earn more</li>
+      <li class="nav-sec">Lender console</li>
+      <li data-view="demo"><span class="ico">▶</span>Guided demo</li>
+      <li data-view="overview"><span class="ico">◍</span>Overview</li>
+      <li data-view="portfolio"><span class="ico">☰</span>Portfolio</li>
+      <li data-view="lab"><span class="ico">◐</span>Policy lab</li>
+    </ul>
+
+    <div class="side-foot">
+      <div class="chip-dot"><span class="dot"></span><span id="conn">connecting…</span></div>
+      <small>Synthetic book · deterministic seed</small>
+    </div>
+  </nav>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="page-title">What is <em>CENTRIC</em>?</h1>
+        <p id="page-sub">Repayment intelligence for microfinance lending</p>
+      </div>
+      <div class="top-right">
+        <div class="tabs" id="quick-tabs">
+          <button data-view="about" class="on">Product</button>
+          <button data-view="learn">Learn</button>
+          <button data-view="demo">Demo</button>
+          <button data-view="portfolio">Console</button>
+        </div>
+      </div>
+    </header>
+
+    <div id="view" class="view"></div>
+  </main>
+</div>
+
+<div id="tooltip" class="tooltip" hidden></div>
+
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
