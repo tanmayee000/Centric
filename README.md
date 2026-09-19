@@ -2,7 +2,7 @@
 
 **▶ [Open the live prototype](https://tanmayee000.github.io/Centric/centric-console.html)** — runs in your browser, nothing to install.
 
-**Team Cipher** . Tanmayee, Shourya, Gitesh, Aryaman, Kshiti
+
 
 A working reference implementation of the CENTRIC repayment engine: read a
 borrower's real cash flow, work out what they can actually pay each month, and
