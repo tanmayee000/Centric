@@ -164,26 +164,7 @@ All accept `utilisation`, `grace`, `max_extension`, `npv_floor`, `interest_cap`.
 
 ---
 
-## Honest limitations
 
-Worth stating before someone finds them:
-
-- **The book is synthetic.** Deterministic from a fixed seed, and shaped to be
-  structurally realistic, but it is not real lending data. Swap
-  `data.load_portfolio()` for a database read; nothing downstream changes.
-- **Decomposition needs history.** Roughly two seasonal cycles. A borrower with
-  six months of records gets a wide confidence band, not a confident plan.
-- **The dip-vs-decline test is a two-sample comparison**, not a full change-point
-  model. It is deliberately conservative: it would rather miss a slow decline
-  than libel a borrower having a bad quarter. A production version should add
-  CUSUM or Bayesian online change-point detection.
-- **Interest accrues at the contract rate throughout.** Real restructuring often
-  freezes or reduces it during relief, which would change both the NPV and the
-  interest ratio. Modelling that is the obvious next step.
-- **No fraud or collusion model.** Verified inflows and a relief cap are
-  assumed, not implemented.
-- **Numbers in the deck come from this code**, on this synthetic book. They are
-  model output, not measured market results.
 
 ## Next
 
@@ -194,5 +175,4 @@ Worth stating before someone finds them:
 - Persistence and an officer decision log, so overrides become training signal
 
 ## Licence
-
-MIT — see `LICENSE`.
+ see `LICENSE`.
