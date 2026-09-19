@@ -1,6 +1,8 @@
 # CENTRIC — Adaptive Cash-Flow Repayment Intelligence
 
-**Team Cipher** · Manipal Hackathon 2026 · Tanmayee, Shourya, Gitesh, Aryaman, Purunjay
+**▶ [Open the live prototype](https://tanmayee000.github.io/Centric/centric-console.html)** — runs in your browser, nothing to install.
+
+**Team Cipher** · Manipal Hackathon 2026 · Tanmayee, Shourya, Gitesh, Aryaman, Kshiti
 
 A working reference implementation of the CENTRIC repayment engine: read a
 borrower's real cash flow, work out what they can actually pay each month, and
@@ -18,8 +20,8 @@ recovers.
 No dependencies. No build step. Python 3.9 or newer.
 
 ```bash
-git clone <your-repo-url> centric
-cd centric
+git clone https://github.com/tanmayee000/Centric.git
+cd Centric
 
 python -m centric.server          # lender console at http://127.0.0.1:8000
 python -m centric.cli replay      # whole book, fixed EMI vs adaptive
